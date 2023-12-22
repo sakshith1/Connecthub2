@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Tweet - ConnectHub</title>
+</head>
+<body>
+    <h1>Post a Tweet</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+        </div>
+        <div>
+            <label for="content">Tweet Content:</label>
+            <textarea id="content" name="content" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="photo">Attach Photo:</label>
+            <input type="file" id="photo" name="photo">
+        </div>
+        <button type="submit">Post Tweet</button>
+    </form>
+    <p><a href="{{ url_for('home') }}">Back to Home</a></p>
+</body>
+</html>
